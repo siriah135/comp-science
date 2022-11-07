@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arithmetic</title>
+        <script>
+            function mul(){
+                p =parseInt(f1.tb1.value)
+                r =parseInt(f1.tb2.value)
+                t =parseInt(f1.tb3.value)
+                m=(p*r*t)/100
+                document.getElementById('tb4').value=m; 
+            }
+        </script> 
+    </head>
+    <body>
+        <p><b> INPUT:</b></p>
+        <form id="f1">
+            Enter Principle : <input type="text" id= "tb1"><br><br>
+            Enter Rate : <input type="text" id= "tb2"><br><br> 
+            Enter Year : <input type="text" id= "tb3"><br><br> 
+            <button type="button" onclick="mul()">Simple Interest</button><br><br>
+            <hr color="blue">
+            <p><b>Output:</b></p>
+            <input type="text" id= "tb4">
+        </form> 
+    </body> 
+</html> 
+
