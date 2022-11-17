@@ -1,0 +1,32 @@
+
+    <script>
+        var count = 0;
+        function myfunction(x) {
+            var x;
+            
+                if(x == 1){
+                    count = count+1;
+                    console.log(count)
+                }
+        
+                if(count == 1){
+                    document.getElementById("change").style.background = 'white';
+                }
+                else if(count == 2){
+                    document.getElementById("change").style.background = 'pink';
+                    count = 0;
+                }
+          
+        }
+        
+        </script>
+        <style>.btn {
+          float:center;
+        }.btn-success{font-size: 50px;}</style>
+        <title>Document</title>
+        </head>
+        <body>
+        
+        <br><br><br><center><button id="change" onclick="myfunction(1)" class="btn btn-success">&nbsp&nbsp&nbsp&nbspclick&nbsp&nbsp&nbsp&nbsp</button></center>
+        
+        </body>
