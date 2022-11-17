@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>the icecream shop</h2>
+<img src="realistic-soft-american-ice-cream-waffle-cone_8071-5377.jpg" alt="Soft American Icecream"
+width="400" 
+     height="500" />
+
+<button onclick="myFunction()">Buy</button>
+<h3 id="tb1"></h3>
+<br><br>
+
+<img src="mintchoco.jpg" alt="mintchoco Icecream"
+     width="300" 
+          height="400" />
+<button onclick="myFunction()">Buy</button>
+<h3 id="tb2"></h3>
+<br><br>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Buy")) {
+    txt = "Thank you for buying";
+  } else {
+    txt = "You pressed cancel!";
+  }
+  document.getElementById("tb1").innerHTML = txt;
+}
+function myFunction() {
+  var txt;
+  if (confirm("Buy")) {
+    txt = "thank you for buying";
+  } else {
+    txt = "You pressed cancel!";
+  }
+  document.getElementById("tb2").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
